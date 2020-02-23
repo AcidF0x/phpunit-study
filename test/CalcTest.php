@@ -1,18 +1,16 @@
 <?php
 use PHPUnit\Framework\TestCase;
-
+use App\Calc;
 /**
  * Class CalcTest
  */
 class CalcTest extends TestCase
 {
-
     protected $calc;
 
     protected function setUp(): void
     {
         parent::setUp();
-        require_once __DIR__ . "/../src/Calc.php";
         $this->calc = new Calc();
     }
 
