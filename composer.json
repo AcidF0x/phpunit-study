@@ -1,0 +1,13 @@
+{
+    "name": "duhui/phpunit-study",
+    "authors": [
+        {
+            "name": "duhuicho",
+            "email": "ic_jdh@me.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    }
+}
