@@ -19,8 +19,8 @@ class CokeVendingMachine
 
     /**
      * CokeVendingMachine constructor.
-     * @param $cokeStock 콜라 재고
-     * @param $price 병당 가격
+     * @param $cokeStock int 재고
+     * @param $price int 가격
      */
     public function __construct($cokeStock, $price)
     {
@@ -30,8 +30,8 @@ class CokeVendingMachine
 
     /**
      * 콜라 판매 메서드
-     * @param $count 갯수
-     * @param $money 투입 액금
+     * @param $count int 갯수
+     * @param $money int 투입금액
      * @throws \Exception
      * @return int 잔돈
      */
@@ -47,7 +47,9 @@ class CokeVendingMachine
             throw new \Exception('금액이 부족합니다.');
         }
 
-        $change = $this->price - $totalPrice;
+        $change = $money - $totalPrice;
+        $this->stock -= $count;
+
         return $change;
     }
 
@@ -57,6 +59,6 @@ class CokeVendingMachine
      */
     public function getStock()
     {
-        return $this->getStock();
+        return $this->stock;
     }
 }
