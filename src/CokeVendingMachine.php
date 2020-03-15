@@ -44,7 +44,7 @@ class CokeVendingMachine
         }
 
         if ($this->stock < $count) {
-            throw new \Exception('금액이 부족합니다.');
+            throw new \Exception('재고가 부족합니다.');
         }
 
         $change = $money - $totalPrice;
