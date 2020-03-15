@@ -13,7 +13,7 @@ class CokeVendingMachine
      */
     private $stock;
     /**
-     * @var int 병당 가
+     * @var int 병당 가격
      */
     private $price;
 
@@ -54,7 +54,7 @@ class CokeVendingMachine
     }
 
     /**
-     * 재고 확
+     * 재고 확인
      * @return int 재고
      */
     public function getStock()
